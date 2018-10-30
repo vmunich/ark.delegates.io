@@ -134,7 +134,7 @@
     <meta property="og:locale" content="{{ app()->getLocale() }}" />
     {{-- <meta property="og:locale:alternate" content="en-us" /> --}}
     <meta property="og:site_name" content="ArkX Delegates - {{ $delegate->username }}" />
-    {{-- <meta property="og:image" content="http://delegates.arkx.io/cover.jpg" /> --}}
-    {{-- <meta property="og:image:url" content="http://delegates.arkx.io/cover.jpg" /> --}}
+    {{-- <meta property="og:image" content="https://ark.delegates.io/cover.jpg" /> --}}
+    {{-- <meta property="og:image:url" content="https://ark.delegates.io/cover.jpg" /> --}}
     {{-- <meta property="og:image:size" content="300" /> --}}
 @endsection

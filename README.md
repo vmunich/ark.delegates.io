@@ -1,6 +1,6 @@
 # Ark Delegates
 
-Source of [https://delegates.arkx.io](https://delegates.arkx.io).
+Source of [https://ark.delegates.io/](https://ark.delegates.io/).
 
 ## Requirements
 
