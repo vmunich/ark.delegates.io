@@ -2,8 +2,8 @@
 
 namespace Tests\Feature\Http\Dashboard\Delegates;
 
-use App\Models\Delegate;
 use Tests\TestCase;
+use App\Models\Delegate;
 
 /**
  * @coversNothing

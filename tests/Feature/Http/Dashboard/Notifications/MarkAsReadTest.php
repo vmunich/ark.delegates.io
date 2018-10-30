@@ -2,9 +2,9 @@
 
 namespace Tests\Feature\Http\Dashboard\Notifications;
 
+use Tests\TestCase;
 use App\Models\Delegate;
 use App\Notifications\DelegateVerified;
-use Tests\TestCase;
 
 /**
  * @coversNothing

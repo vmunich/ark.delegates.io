@@ -39,7 +39,7 @@ trait HasSiblings
      */
     public function hasPrevious(): bool
     {
-        return !empty($this->previous());
+        return ! empty($this->previous());
     }
 
     /**
@@ -49,6 +49,6 @@ trait HasSiblings
      */
     public function hasNext(): bool
     {
-        return !empty($this->next());
+        return ! empty($this->next());
     }
 }

@@ -4,8 +4,8 @@ namespace App\Console\Commands\Polling;
 
 use App\Models\Delegate;
 use App\Services\Ark\Client;
-use GrahamCampbell\GuzzleFactory\GuzzleFactory;
 use Illuminate\Console\Command;
+use GrahamCampbell\GuzzleFactory\GuzzleFactory;
 
 class PollAvatars extends Command
 {
@@ -29,7 +29,7 @@ class PollAvatars extends Command
         ]);
 
         Delegate::all()->each(function ($delegate) use ($client) {
-            if (!$delegate->extra_attributes->profile['logo']) {
+            if (! $delegate->extra_attributes->profile['logo']) {
                 $this->line('Polling Block: <info>'.$delegate['username'].'</info>');
 
                 $response = $client->get($delegate['address']);

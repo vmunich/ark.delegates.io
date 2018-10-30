@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers\API;
 
-use App\Http\Controllers\Controller;
-use App\Http\Filters\FiltersTags;
-use App\Http\Resources\Delegate as DelegateResource;
-use App\Http\Resources\Tag as TagResource;
+use Spatie\Tags\Tag;
 use App\Models\Delegate;
 use Spatie\QueryBuilder\Filter;
+use App\Http\Filters\FiltersTags;
+use App\Http\Controllers\Controller;
 use Spatie\QueryBuilder\QueryBuilder;
-use Spatie\Tags\Tag;
+use App\Http\Resources\Tag as TagResource;
+use App\Http\Resources\Delegate as DelegateResource;
 
 class TagController extends Controller
 {

@@ -2,11 +2,11 @@
 
 namespace Tests\Feature\Http\Dashboard\LostAndFound;
 
+use Tests\TestCase;
 use App\Models\Delegate;
+use ArkEcosystem\Crypto\Utils\Message;
 use ArkEcosystem\Crypto\Identities\Address;
 use ArkEcosystem\Crypto\Identities\PublicKey;
-use ArkEcosystem\Crypto\Utils\Message;
-use Tests\TestCase;
 
 /**
  * @coversNothing

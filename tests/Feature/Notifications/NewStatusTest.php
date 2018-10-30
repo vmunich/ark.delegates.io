@@ -2,11 +2,11 @@
 
 namespace Tests\Feature\Notifications;
 
-use App\Models\Status;
+use Tests\TestCase;
 use App\Models\User;
+use App\Models\Status;
 use App\Notifications\NewStatus;
 use Illuminate\Support\Facades\Notification;
-use Tests\TestCase;
 
 /**
  * @coversNothing

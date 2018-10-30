@@ -2,9 +2,9 @@
 
 namespace Tests\Feature\Http\Auth;
 
-use Illuminate\Auth\Notifications\ResetPassword;
-use Illuminate\Support\Facades\Notification;
 use Tests\TestCase;
+use Illuminate\Support\Facades\Notification;
+use Illuminate\Auth\Notifications\ResetPassword;
 
 /**
  * @coversNothing

@@ -2,10 +2,10 @@
 
 namespace App\Console\Commands\Polling;
 
-use App\Events\VoteWasShifted;
-use App\Models\Delegate;
 use App\Models\Voter;
+use App\Models\Delegate;
 use App\Services\Ark\Client;
+use App\Events\VoteWasShifted;
 use Illuminate\Console\Command;
 
 class PollVoters extends Command
@@ -47,7 +47,7 @@ class PollVoters extends Command
 
                 // Used to be a voter...
                 $wasVoting = $activeVoters->contains($voter['address']);
-                $noLongerVoting = !$votersList->pluck('address')->contains($voter['address']);
+                $noLongerVoting = ! $votersList->pluck('address')->contains($voter['address']);
 
                 if ($wasVoting && $noLongerVoting) {
                     Voter::whereAddress($voter['address'])->delete();

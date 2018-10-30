@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers\API;
 
-use App\Http\Controllers\Controller;
-use App\Http\Resources\Voter as VoterResource;
 use App\Models\Voter;
+use App\Http\Controllers\Controller;
 use Spatie\QueryBuilder\QueryBuilder;
+use App\Http\Resources\Voter as VoterResource;
 
 class VoterController extends Controller
 {

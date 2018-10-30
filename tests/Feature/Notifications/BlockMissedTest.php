@@ -2,11 +2,11 @@
 
 namespace Tests\Feature\Notifications;
 
-use App\Models\Delegate;
+use Tests\TestCase;
 use App\Models\User;
+use App\Models\Delegate;
 use App\Notifications\BlockMissed;
 use Illuminate\Support\Facades\Notification;
-use Tests\TestCase;
 
 /**
  * @coversNothing

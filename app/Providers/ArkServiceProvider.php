@@ -2,9 +2,9 @@
 
 namespace App\Providers;
 
-use ArkEcosystem\Crypto\Configuration\Network;
-use ArkEcosystem\Crypto\Networks\Mainnet;
 use Illuminate\Support\ServiceProvider;
+use ArkEcosystem\Crypto\Networks\Mainnet;
+use ArkEcosystem\Crypto\Configuration\Network;
 
 class ArkServiceProvider extends ServiceProvider
 {
@@ -21,7 +21,7 @@ class ArkServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        if (!defined('ARKTOSHI')) {
+        if (! defined('ARKTOSHI')) {
             define('ARKTOSHI', 10 ** 8);
         }
     }

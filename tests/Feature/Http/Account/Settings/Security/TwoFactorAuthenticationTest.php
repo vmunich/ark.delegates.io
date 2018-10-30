@@ -2,8 +2,8 @@
 
 namespace Tests\Feature\Http\Account\Settings\Security;
 
-use App\Facades\Authy;
 use Tests\TestCase;
+use App\Facades\Authy;
 
 /**
  * @coversNothing

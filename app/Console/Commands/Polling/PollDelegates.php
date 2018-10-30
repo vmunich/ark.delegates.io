@@ -2,10 +2,10 @@
 
 namespace App\Console\Commands\Polling;
 
-use App\Events\RankWasShifted;
-use App\Models\Delegate;
 use App\Models\User;
+use App\Models\Delegate;
 use App\Services\Ark\Client;
+use App\Events\RankWasShifted;
 use Illuminate\Console\Command;
 
 class PollDelegates extends Command

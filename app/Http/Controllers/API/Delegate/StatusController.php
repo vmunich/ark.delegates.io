@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\API\Delegate;
 
-use App\Http\Controllers\Controller;
-use App\Http\Resources\Status as StatusResource;
-use App\Models\Delegate;
 use App\Models\Status;
+use App\Models\Delegate;
+use App\Http\Controllers\Controller;
 use Spatie\QueryBuilder\QueryBuilder;
+use App\Http\Resources\Status as StatusResource;
 
 class StatusController extends Controller
 {

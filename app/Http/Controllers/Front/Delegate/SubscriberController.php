@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Front\Delegate;
 
-use App\Models\Delegate;
 use Exception;
+use App\Models\Delegate;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Cookie;

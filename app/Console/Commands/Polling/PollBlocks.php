@@ -2,9 +2,9 @@
 
 namespace App\Console\Commands\Polling;
 
-use App\Events\BlockWasMissed;
 use App\Models\Delegate;
 use App\Services\Ark\Client;
+use App\Events\BlockWasMissed;
 use Illuminate\Console\Command;
 
 class PollBlocks extends Command

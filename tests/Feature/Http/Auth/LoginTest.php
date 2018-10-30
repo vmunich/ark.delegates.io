@@ -2,8 +2,8 @@
 
 namespace Tests\Feature\Http\Auth;
 
-use App\Models\User;
 use Tests\TestCase;
+use App\Models\User;
 
 /**
  * @coversNothing

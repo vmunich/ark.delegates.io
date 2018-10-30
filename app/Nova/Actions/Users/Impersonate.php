@@ -2,10 +2,10 @@
 
 namespace App\Nova\Actions\Users;
 
-use Illuminate\Queue\SerializesModels;
-use Illuminate\Support\Collection;
 use Laravel\Nova\Actions\Action;
+use Illuminate\Support\Collection;
 use Laravel\Nova\Fields\ActionFields;
+use Illuminate\Queue\SerializesModels;
 
 class Impersonate extends Action
 {

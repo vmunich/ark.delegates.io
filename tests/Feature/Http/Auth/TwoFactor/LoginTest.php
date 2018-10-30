@@ -2,9 +2,9 @@
 
 namespace Tests\Feature\Http\Auth\TwoFactor;
 
-use App\Facades\Authy;
-use App\Models\User;
 use Tests\TestCase;
+use App\Models\User;
+use App\Facades\Authy;
 
 /**
  * @coversNothing

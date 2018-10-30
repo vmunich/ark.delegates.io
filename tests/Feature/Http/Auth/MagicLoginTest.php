@@ -2,10 +2,10 @@
 
 namespace Tests\Feature\Http\Auth;
 
-use App\Notifications\MagicLink;
-use Illuminate\Support\Facades\Notification;
-use Illuminate\Support\Facades\URL;
 use Tests\TestCase;
+use App\Notifications\MagicLink;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Notification;
 
 /**
  * @coversNothing

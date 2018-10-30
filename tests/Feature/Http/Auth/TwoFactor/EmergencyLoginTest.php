@@ -2,10 +2,10 @@
 
 namespace Tests\Feature\Http\Auth\TwoFactor;
 
-use App\Models\User;
-use Illuminate\Support\Facades\Hash;
-use Ramsey\Uuid\Uuid;
 use Tests\TestCase;
+use App\Models\User;
+use Ramsey\Uuid\Uuid;
+use Illuminate\Support\Facades\Hash;
 
 /**
  * @coversNothing

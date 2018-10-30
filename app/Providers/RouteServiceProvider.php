@@ -2,17 +2,17 @@
 
 namespace App\Providers;
 
-use App\Models\Announcement;
-use App\Models\Channel;
-use App\Models\Contribution;
-use App\Models\Delegate;
+use Spatie\Tags\Tag;
+use App\Models\Voter;
 use App\Models\Server;
 use App\Models\Status;
+use App\Models\Channel;
+use App\Models\Delegate;
 use App\Models\TeamMember;
-use App\Models\Voter;
-use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use App\Models\Announcement;
+use App\Models\Contribution;
 use Illuminate\Support\Facades\Route;
-use Spatie\Tags\Tag;
+use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
 class RouteServiceProvider extends ServiceProvider
 {

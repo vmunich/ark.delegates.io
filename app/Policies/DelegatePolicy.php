@@ -2,8 +2,8 @@
 
 namespace App\Policies;
 
-use App\Models\Delegate;
 use App\Models\User;
+use App\Models\Delegate;
 
 class DelegatePolicy extends Policy
 {

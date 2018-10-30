@@ -2,10 +2,10 @@
 
 namespace Tests\Feature\Notifications;
 
+use Tests\TestCase;
 use App\Models\User;
 use App\Notifications\MagicLink;
 use Illuminate\Support\Facades\Notification;
-use Tests\TestCase;
 
 /**
  * @coversNothing

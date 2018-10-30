@@ -2,9 +2,9 @@
 
 namespace Tests\Feature\Http\Dashboard\Notifications;
 
+use Tests\TestCase;
 use App\Models\Delegate;
 use App\Notifications\NewStatus;
-use Tests\TestCase;
 
 /**
  * @coversNothing

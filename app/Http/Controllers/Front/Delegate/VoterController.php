@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Front\Delegate;
 
-use App\Http\Controllers\Controller;
 use App\Models\Delegate;
+use App\Http\Controllers\Controller;
 
 class VoterController extends Controller
 {

@@ -2,8 +2,8 @@
 
 namespace Tests\Browser\Auth\Password;
 
-use App\Models\User;
 use Hash;
+use App\Models\User;
 use Laravel\Dusk\Browser;
 use Tests\Browser\TestCase;
 

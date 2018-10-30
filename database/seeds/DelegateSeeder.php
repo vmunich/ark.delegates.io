@@ -1,9 +1,9 @@
 <?php
 
+use App\Models\Voter;
+use App\Models\Server;
 use App\Models\Channel;
 use App\Models\Delegate;
-use App\Models\Server;
-use App\Models\Voter;
 use Illuminate\Database\Seeder;
 
 class DelegateSeeder extends Seeder

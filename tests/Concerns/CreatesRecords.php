@@ -2,10 +2,10 @@
 
 namespace Tests\Concerns;
 
-use App\Models\Announcement;
-use App\Models\Delegate;
-use App\Models\Status;
 use App\Models\User;
+use App\Models\Status;
+use App\Models\Delegate;
+use App\Models\Announcement;
 
 trait CreatesRecords
 {

@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\API;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Dashboard\Delegate\UpdateDelegate;
-use App\Http\Resources\Delegate as DelegateResource;
 use App\Models\Delegate;
+use App\Http\Controllers\Controller;
 use Spatie\QueryBuilder\QueryBuilder;
+use App\Http\Resources\Delegate as DelegateResource;
+use App\Http\Requests\Dashboard\Delegate\UpdateDelegate;
 
 class DelegateController extends Controller
 {

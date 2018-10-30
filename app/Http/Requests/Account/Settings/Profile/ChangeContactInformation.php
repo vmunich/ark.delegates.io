@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\Account\Settings\Profile;
 
-use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
+use Illuminate\Foundation\Http\FormRequest;
 
 class ChangeContactInformation extends FormRequest
 {
