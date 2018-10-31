@@ -23,7 +23,7 @@ class EmergencyLoginTest extends TestCase
         ])->save();
 
         // Assert...
-        $this->withSession(['arkx:auth:id' => 1])
+        $this->withSession(['ark:auth:id' => 1])
              ->post('/auth/two-factor/emergency', ['token' => (string) $emergencyToken])
              ->assertRedirect('/dashboard');
     }
@@ -39,7 +39,7 @@ class EmergencyLoginTest extends TestCase
         ])->save();
 
         // Assert...
-        $this->withSession(['arkx:auth:id' => 1])
+        $this->withSession(['ark:auth:id' => 1])
              ->post('/auth/two-factor/emergency', ['token' => 'fake-token'])
              ->assertRedirect('/auth/login')
              ->assertSessionHas('alert.message', 'The emergency token was invalid.');

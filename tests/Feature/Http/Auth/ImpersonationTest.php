@@ -18,7 +18,7 @@ class ImpersonationTest extends TestCase
             ->actingAs($admin = $this->createAdministrator())
             ->get("/auth/impersonation/{$user->id}")
             ->assertRedirect('/dashboard')
-            ->assertSessionHas('arkx:impersonator', $admin->id);
+            ->assertSessionHas('ark:impersonator', $admin->id);
     }
 
     /** @test */

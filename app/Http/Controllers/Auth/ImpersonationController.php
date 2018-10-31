@@ -32,7 +32,7 @@ class ImpersonationController extends Controller
     {
         $request->session()->flush();
 
-        $request->session()->put('arkx:impersonator', $request->user()->id);
+        $request->session()->put('ark:impersonator', $request->user()->id);
 
         auth()->login($user);
 
@@ -50,13 +50,13 @@ class ImpersonationController extends Controller
     {
         $currentId = auth()->id();
 
-        if (! $request->session()->has('arkx:impersonator')) {
+        if (! $request->session()->has('ark:impersonator')) {
             auth()->logout();
 
             return redirect('/');
         }
 
-        $nextId = $request->session()->pull('arkx:impersonator');
+        $nextId = $request->session()->pull('ark:impersonator');
 
         $request->session()->flush();
 

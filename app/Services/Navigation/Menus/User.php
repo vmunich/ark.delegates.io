@@ -13,7 +13,7 @@ class User
             return $this
                 ->icon()
                 ->iconRoute('account.settings.profile', 'cog', 'Settings')
-                ->iconRoute('impersonation.stop', 'user-secret', 'Stop Impersonating', session()->has('arkx:impersonator'))
+                ->iconRoute('impersonation.stop', 'user-secret', 'Stop Impersonating', session()->has('ark:impersonator'))
                 ->registerFilter(function (Link $link) {
                     $link->addClass('mt-5');
                 })

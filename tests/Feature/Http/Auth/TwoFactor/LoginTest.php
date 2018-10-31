@@ -28,7 +28,7 @@ class LoginTest extends TestCase
         ])->save();
 
         // Assert...
-        $this->withSession(['arkx:auth:id' => 1])
+        $this->withSession(['ark:auth:id' => 1])
              ->post('/auth/two-factor/login', ['token' => 123456789])
              ->assertRedirect('/dashboard');
     }
@@ -50,7 +50,7 @@ class LoginTest extends TestCase
         ])->save();
 
         // Assert...
-        $this->withSession(['arkx:auth:id' => 1])
+        $this->withSession(['ark:auth:id' => 1])
              ->post('/auth/two-factor/login', ['token' => 123456789])
              ->assertRedirect('/auth/login')
              ->assertSessionHas('alert.message', 'The provided one-time password was invalid.');

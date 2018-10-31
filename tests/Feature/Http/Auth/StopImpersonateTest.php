@@ -16,9 +16,9 @@ class StopImpersonateTest extends TestCase
 
         $this
             ->actingAs($this->createDelegate())
-            ->withSession(['arkx:impersonator' => $admin->id])
+            ->withSession(['ark:impersonator' => $admin->id])
             ->get('/auth/impersonation/stop')
             ->assertRedirect('/')
-            ->assertSessionMissing('arkx:impersonator');
+            ->assertSessionMissing('ark:impersonator');
     }
 }

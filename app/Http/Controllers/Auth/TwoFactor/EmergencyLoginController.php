@@ -53,11 +53,11 @@ class EmergencyLoginController extends Controller
     {
         $this->validate($request, ['token' => 'required']);
 
-        if (! $request->session()->has('arkx:auth:id')) {
+        if (! $request->session()->has('ark:auth:id')) {
             return redirect()->route('login');
         }
 
-        $user = User::findOrFail($request->session()->pull('arkx:auth:id'));
+        $user = User::findOrFail($request->session()->pull('ark:auth:id'));
 
         if (! Hash::check($request->token, $user->two_factor_reset_code)) {
             alert()->error('The emergency token was invalid.');

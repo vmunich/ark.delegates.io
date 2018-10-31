@@ -13,14 +13,14 @@ class UserSeeder extends Seeder
     {
         factory(User::class)
             ->create([
-                'email'    => 'trusty@arkx.io',
+                'email'    => 'trusty@delegates.io',
                 'password' => Hash::make(str_random(128)),
             ])
             ->assignRole('admin');
 
         if (app()->environment('local', 'testing')) {
             factory(User::class)
-                ->create(['email' => 'dummy@arkx.io'])
+                ->create(['email' => 'dummy@delegates.io'])
                 ->assignRole('delegate');
         }
     }

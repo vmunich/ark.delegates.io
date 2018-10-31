@@ -62,7 +62,7 @@ class LoginController extends Controller
     {
         auth()->logout();
 
-        $request->session()->put(['arkx:auth:id' => $user->id]);
+        $request->session()->put(['ark:auth:id' => $user->id]);
 
         return redirect()->route('two-factor.login');
     }

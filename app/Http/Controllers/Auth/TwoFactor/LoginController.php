@@ -53,11 +53,11 @@ class LoginController extends Controller
             'token' => ['required', 'integer'],
         ]);
 
-        if (! $request->session()->has('arkx:auth:id')) {
+        if (! $request->session()->has('ark:auth:id')) {
             return redirect()->route('login');
         }
 
-        $user = User::findOrFail($request->session()->pull('arkx:auth:id'));
+        $user = User::findOrFail($request->session()->pull('ark:auth:id'));
 
         if (Authy::verify($user->authy_id, $request->token)) {
             auth()->login($user);
