@@ -1,3 +1,3 @@
 <div class="footer copyright">
-    <p>&copy; ArkX {{ date('Y') }}. All rights reserved.</p>
+    <p>&copy; {{ date('Y') }} Ark Delegates By <a href="https://github.com/faustbrian">@faustbrian</a></p>
 </div>
