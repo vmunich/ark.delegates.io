@@ -165,16 +165,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.70.2",
+            "version": "3.70.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "e50b0130baed05202be170601a483f56648815f0"
+                "reference": "8278052a097a4ebe2b798fab7e2e3c907bc01a47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e50b0130baed05202be170601a483f56648815f0",
-                "reference": "e50b0130baed05202be170601a483f56648815f0",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8278052a097a4ebe2b798fab7e2e3c907bc01a47",
+                "reference": "8278052a097a4ebe2b798fab7e2e3c907bc01a47",
                 "shasum": ""
             },
             "require": {
@@ -244,7 +244,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2018-11-01T22:27:40+00:00"
+            "time": "2018-11-02T20:04:36+00:00"
         },
         {
             "name": "bitwasp/bitcoin",
@@ -1805,16 +1805,16 @@
         },
         {
             "name": "laravel/telescope",
-            "version": "v0.1.5",
+            "version": "v0.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/telescope.git",
-                "reference": "3984649a9ff8e9bcca6b40d1126d2d8e336616de"
+                "reference": "e3dbda59367969222603a2a20f0ee3aabe7bcdce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/telescope/zipball/3984649a9ff8e9bcca6b40d1126d2d8e336616de",
-                "reference": "3984649a9ff8e9bcca6b40d1126d2d8e336616de",
+                "url": "https://api.github.com/repos/laravel/telescope/zipball/e3dbda59367969222603a2a20f0ee3aabe7bcdce",
+                "reference": "e3dbda59367969222603a2a20f0ee3aabe7bcdce",
                 "shasum": ""
             },
             "require": {
@@ -1825,7 +1825,7 @@
                 "symfony/var-dumper": "^4.1"
             },
             "require-dev": {
-                "nunomaduro/larastan": "^0.3.4",
+                "nunomaduro/larastan": "^0.3.7",
                 "orchestra/testbench": "~3.7"
             },
             "type": "library",
@@ -1864,7 +1864,7 @@
                 "laravel",
                 "monitoring"
             ],
-            "time": "2018-10-29T20:37:28+00:00"
+            "time": "2018-11-02T10:45:19+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -3113,6 +3113,17 @@
         {
             "name": "roave/security-advisories",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Roave/SecurityAdvisories.git",
+                "reference": "74a42b8d8d9f9cd672be58e7d1c65094da4ae971"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/74a42b8d8d9f9cd672be58e7d1c65094da4ae971",
+                "reference": "74a42b8d8d9f9cd672be58e7d1c65094da4ae971",
+                "shasum": ""
+            },
             "conflict": {
                 "3f/pygmentize": "<1.2",
                 "adodb/adodb-php": "<5.20.12",
