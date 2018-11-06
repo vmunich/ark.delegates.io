@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\Builder;
 use App\Models\Concerns\HasSchemalessAttributes;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Storage;
 
 class Delegate extends Model
 {
@@ -195,7 +196,7 @@ class Delegate extends Model
     {
         $logo = $this->extra_attributes->profile['logo'];
 
-        if (! $logo) {
+        if (!Storage::disk('public')->exists($logo)) {
             $hash = md5($this->username);
 
             return "https://api.adorable.io/avatars/256/{$hash}.png";
@@ -205,11 +206,7 @@ class Delegate extends Model
             return str_replace('http://', 'https://', $logo);
         }
 
-        if ($logo) {
-            $logo = "storage/{$logo}";
-        }
-
-        return asset($logo ?? 'images/default-photo.jpeg');
+        return asset("storage/{$logo}" ?? 'images/default-photo.jpeg');
     }
 
     /**
