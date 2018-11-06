@@ -6,6 +6,7 @@ use App\Models\Delegate;
 use App\Services\Ark\Client;
 use Illuminate\Console\Command;
 use GrahamCampbell\GuzzleFactory\GuzzleFactory;
+use Storage;
 
 class PollAvatars extends Command
 {
@@ -29,7 +30,10 @@ class PollAvatars extends Command
         ]);
 
         Delegate::all()->each(function ($delegate) use ($client) {
-            if (! $delegate->extra_attributes->profile['logo']) {
+            $logo = $this->extra_attributes->profile['logo'];
+            $logoExists = Storage::disk('public')->exists($logo);
+
+            if (! $logo || ! $logoExists) {
                 $this->line('Polling Block: <info>'.$delegate['username'].'</info>');
 
                 $response = $client->get($delegate['address']);
