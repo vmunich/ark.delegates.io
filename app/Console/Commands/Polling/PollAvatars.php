@@ -34,7 +34,7 @@ class PollAvatars extends Command
             $logoExists = Storage::disk('public')->exists($logo);
 
             if (! $logo || ! $logoExists) {
-                $this->line('Polling Block: <info>'.$delegate['username'].'</info>');
+                $this->line('Polling Delegate: <info>'.$delegate['username'].'</info>');
 
                 $response = $client->get($delegate['address']);
 
