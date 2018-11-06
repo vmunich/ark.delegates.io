@@ -30,7 +30,7 @@ class PollAvatars extends Command
         ]);
 
         Delegate::all()->each(function ($delegate) use ($client) {
-            $logo = $this->extra_attributes->profile['logo'];
+            $logo = $delegate->extra_attributes->profile['logo'];
             $logoExists = Storage::disk('public')->exists($logo);
 
             if (! $logo || ! $logoExists) {
