@@ -4,7 +4,6 @@ namespace App\Console\Commands\Polling;
 
 use Storage;
 use App\Models\Delegate;
-use App\Services\Ark\Client;
 use Illuminate\Console\Command;
 use GrahamCampbell\GuzzleFactory\GuzzleFactory;
 
@@ -55,7 +54,8 @@ class PollAvatars extends Command
      * @param  Delegate $delegate
      * @return void
      */
-    private function pollAvatar (Delegate $delegate): void {
+    private function pollAvatar(Delegate $delegate): void
+    {
         $this->line('Polling Delegate: <info>'.$delegate['username'].'</info>');
 
         $response = $this->client->get($delegate['address']);
