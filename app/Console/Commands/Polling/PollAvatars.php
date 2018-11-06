@@ -22,6 +22,8 @@ class PollAvatars extends Command
      */
     public function __construct()
     {
+        parent::__construct();
+
         $this->client = GuzzleFactory::make([
             'base_uri'        => 'https://www.arkvatar.com/arkvatar/',
             'allow_redirects' => false,
