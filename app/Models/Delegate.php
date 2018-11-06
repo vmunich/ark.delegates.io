@@ -196,14 +196,14 @@ class Delegate extends Model
     {
         $logo = $this->extra_attributes->profile['logo'];
 
+        if (starts_with($logo, 'http')) {
+            return str_replace('http://', 'https://', $logo);
+        }
+
         if (! Storage::disk('public')->exists($logo)) {
             $hash = md5($this->username);
 
             return "https://api.adorable.io/avatars/256/{$hash}.png";
-        }
-
-        if (starts_with($logo, 'http')) {
-            return str_replace('http://', 'https://', $logo);
         }
 
         return asset("storage/{$logo}" ?? 'images/default-photo.jpeg');
