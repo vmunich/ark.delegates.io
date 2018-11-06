@@ -2,11 +2,11 @@
 
 namespace App\Console\Commands\Polling;
 
+use Storage;
 use App\Models\Delegate;
 use App\Services\Ark\Client;
 use Illuminate\Console\Command;
 use GrahamCampbell\GuzzleFactory\GuzzleFactory;
-use Storage;
 
 class PollAvatars extends Command
 {
