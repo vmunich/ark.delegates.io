@@ -29,6 +29,14 @@
     </div>
 
     <div class="general">
+        @if($delegate->profile['proposal'])
+            <h5 class="mb-3">Proposal</h5>
+
+            <a href="{{ $delegate->profile['proposal'] }}" class="text-blue-medium inline-block bg-yellow p-2">
+                {{ $delegate->profile['proposal'] }}
+            </a>
+        @endif
+
         @if($delegate->profile['details'])
             <h5 class="mb-3">General Information</h5>
 
