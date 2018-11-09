@@ -33,7 +33,7 @@
             <h5 class="mb-3">Proposal</h5>
 
             <a href="{{ $delegate->profile['proposal'] }}" class="text-blue-medium inline-block bg-yellow p-2">
-                {{ $delegate->profile['proposal'] }}
+                {{ str_limit($delegate->profile['proposal']) }}
             </a>
         @endif
 
