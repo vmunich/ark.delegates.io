@@ -9,8 +9,8 @@
     "license": "MIT",
     "require": {
         "php": "^7.1.3",
-        "arkecosystem/crypto": "^0.2.1",
-        "arkx/ark-calculus": "^0.1.1",
+        "arkecosystem/crypto": "^0.3.0",
+        "arkx/ark-calculus": "^0.2.0",
         "authy/php": "^3.0",
         "doctrine/dbal": "^2.7",
         "erusev/parsedown-extra": "^0.7.1",
