@@ -3,9 +3,9 @@
 namespace App\Console\Commands\Polling;
 
 use App\Models\Delegate;
-use GrahamCampbell\GuzzleFactory\GuzzleFactory;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;
+use GrahamCampbell\GuzzleFactory\GuzzleFactory;
 
 class PollAvatars extends Command
 {

@@ -2,20 +2,20 @@
 
 namespace App\Models;
 
-use App\Models\Concerns\CanBeCached;
-use App\Models\Concerns\CanBeClaimed;
-use App\Models\Concerns\CanBeVerified;
-use App\Models\Concerns\HasSchemalessAttributes;
-use App\Models\Concerns\OwnsModels;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use Spatie\Tags\HasTags;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
+use App\Models\Concerns\OwnsModels;
+use App\Models\Concerns\CanBeCached;
+use App\Models\Concerns\CanBeClaimed;
 use Illuminate\Support\Facades\Cache;
+use App\Models\Concerns\CanBeVerified;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
-use Spatie\Tags\HasTags;
+use Illuminate\Database\Eloquent\Builder;
+use App\Models\Concerns\HasSchemalessAttributes;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Delegate extends Model
 {
