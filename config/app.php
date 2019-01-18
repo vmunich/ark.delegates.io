@@ -159,7 +159,6 @@ return [
         // App\Providers\TelescopeServiceProvider::class,
         App\Providers\NavigationServiceProvider::class,
         App\Providers\NovaServiceProvider::class,
-        App\Providers\NovaServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\ViewServiceProvider::class,
 
