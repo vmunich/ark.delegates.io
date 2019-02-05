@@ -17,6 +17,7 @@
         "fideloper/proxy": "^4.0",
         "graham-campbell/guzzle-factory": "^3.0",
         "laravel/framework": "5.7.*",
+        "laravel/horizon": "^2.0",
         "laravel/nova": "~1.0",
         "laravel/telescope": "^0.1.5",
         "laravel/tinker": "^1.0",
